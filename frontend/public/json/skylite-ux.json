@@ -1,0 +1,38 @@
+{
+  "name": "SkyLite-UX",
+  "slug": "skylite-ux",
+  "categories": [19],
+  "date_created": "2026-02-06",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 3000,
+  "documentation": "https://github.com/Wetzel402/Skylite-UX",
+  "website": "https://github.com/Wetzel402/Skylite-UX",
+  "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/skylite-ux.webp",
+  "config_path": "/opt/skylite-ux/.env",
+  "description": "SkyLite-UX is an open-source, self-hosted family management app with calendar, todos, shopping lists, and user management.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/SkyLite-UX.sh",
+      "resources": {
+        "cpu": 1,
+        "ram": 1024,
+        "hdd": 4,
+        "os": "Debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    {
+      "text": "Database credentials: `cat ~/skylite-ux.creds`",
+      "type": "info"
+    }
+  ]
+}
